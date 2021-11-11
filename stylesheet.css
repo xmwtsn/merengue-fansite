@@ -12,6 +12,13 @@ header {
   top: 1.5em;
 }
 
+footer {
+  padding: 2em;
+  background-color: #3a251c;
+  color: white;
+  text-align: center;
+}
+
 h1 {
   font-size: 5em;
   line-height: 0.5em;
