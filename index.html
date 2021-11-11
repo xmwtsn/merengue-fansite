@@ -10,15 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src='script.js'></script>
+    <script src='js/calculate.js'></script>
+    <script src='js/validate.js'></script>
+    <script src='js/hamburger.js'></script>
 </head>
 <body>
 <nav class="hmenu" id="menu">
     <a href="#home" class="active">Home</a>
     <a href="#">About</a>
     <a href="#">Meet Merengue</a>
-    <a href="#">Café</a>
-    <a href="#">Fanmail</a>
+    <a href="#">Café Merengue</a>
+    <a href="#">Gallery</a>
+    <a href="#">Connect</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <span class="fa fa-bars"></span>
     </a>
@@ -26,7 +29,7 @@
 <header>
     <div class="text-bubble">hi, biscuit!</div>
     <a href=""><img src="/images/Merengue_NH_official.png" style="width: 200px;"></a>
-        <h1>Shortcake</h1>
+        <h1>Club Shortcake</h1>
         <h2>A fansite dedicated to Merengue from Animal Crossing</h2>
 </header>
 <div class="scallop"></div>
@@ -34,13 +37,13 @@
 <div class="flex-container">
     <div class="item main">
         <section class="about">
-            <h3>About Shortcake</h3>
-            <article>Shortcake is a capsule fansite celebrating our favorite digital dessert rhinoceros: Merengue of Animal Crossing! This project was created for the September 2021 Code Louisville Front End Web Development Course by <a href="#">Xavier Watson.</a></article>
+            <h3>About Club Shortcake</h3>
+            <article>Club Shortcake is a capsule fansite celebrating our favorite digital dessert rhinoceros: Merengue of Animal Crossing! This project was created for the September 2021 Code Louisville Front End Web Development Course by <a href="#">Xavier Watson.</a></article>
         </section>
 
         <section class="meet">
             <h3>Meet Merengue</h3>
-            <article>Merengue is a rhino villager that appears in the Nintendo game series Animal Crossing. She is named for the sweet confection meringue, which is whipped egg whites and sugar. True to her name, Merengue resembles a strawberry shortcake, with strawberry and whipped cream horns, white points, a strawberry tail, and a pink body. Her default outfit is the Chef's Outfit.</article>
+            <article>Merengue is a rhino villager that appears in the Nintendo game series Animal Crossing. She is named for the sweet confection meringue, which is whipped egg whites and sugar. True to her name, Merengue resembles a strawberry shortcake. She has horns made of strawberry and meringue, white points, a strawberry tail, and a pink body.</article>
         </section>
     </div>
     <div class="item">
@@ -52,8 +55,8 @@
             <p>Birthday: March 19</p>
             <p>Skill: Doodling</p>
             <p>Goal: Pastry Chef</p>
-            <p>Favorite Song: K.K. Ballad
-            </p>
+            <p>Favorite Song: K.K. Ballad</p>
+            <p>Default Clothing: Chef's Outfit</p>
             </section>
     </div>
     <div class="item">
@@ -63,16 +66,41 @@
             <p><button onclick="buttonClick();" class="click-cake"><span style="font-size: 8em;">🍰</span></button></p>
             <p>Merengue has served you <input type="text" id="cake" value="0"></input> slices of cake this visit.</p>
         </section>
-        <h3>Send Fanmail</h3>
-        <section class="cafe">
-            <textarea id="myText" class="email-input">Hi, Merengue! You're my favorite!</textarea>
-            
-            <button onclick="sendMail(); return false" class="email-submit">Send Letter</button>
-            </section>
     </div>
-  </div>
+</div>
 
-  <footer>test</footer>
+  <section>
+<h3>Gallery</h3>
+    <div class="gallery">
+        <div class="gallery-column">
+          <h4>Spotlight</h4>
+          <figure>
+              <img src="https://64.media.tumblr.com/40276bc5adc5f2075a0d00f0058fe374/tumblr_q8rcv7sDhm1u1rjwjo1_1280.jpg" alt="" style="width: 100%;">
+              <figcaption>caption</figcaption>
+        </figure>
+        </div>
+        <div class="gallery-column">
+          <h4>Home Exterior</h4>
+          <figure>
+            <img src="https://64.media.tumblr.com/40276bc5adc5f2075a0d00f0058fe374/tumblr_q8rcv7sDhm1u1rjwjo1_1280.jpg" alt="" style="width: 100%;">
+            <figcaption>caption</figcaption>
+      </figure>
+        </div>
+        <div class="gallery-column">
+          <h4>Home Interior</h4>
+          <figure>
+            <img src="https://64.media.tumblr.com/40276bc5adc5f2075a0d00f0058fe374/tumblr_q8rcv7sDhm1u1rjwjo1_1280.jpg" alt="" style="width: 100%;">
+            <figcaption>caption</figcaption>
+      </figure>
+        </div>
+      </div>
+  </section>
+
+<footer>
+    <input name="email" placeholder="queenofsweets@merengue.com" class="email-input"/></input>
+    <button id="button" class="email-submit">Become a shortcake!</button>
+    <p id="message"></p>
+</footer>
 </div>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 body {
   margin: 0px;
   background-color: #aacbb0;
@@ -8,8 +9,7 @@ body {
 header {
   display: block;
   text-align: center;
-  position: relative;
-  top: 1.5em;
+  margin-top: 5em;
 }
 
 footer {
@@ -20,7 +20,7 @@ footer {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4em;
   line-height: 0.5em;
 }
 
@@ -38,10 +38,11 @@ a:hover {
 
 .container {
   width: 85%;
-  max-width: 995px;
+  max-width: 1000px;
   margin: 0 auto;
   background-color: #f7f3d9;
   padding: 1em;
+  box-sizing: border-box;
 }
 
 .cafe {
@@ -55,8 +56,7 @@ a:hover {
 .scallop {
   height: 50px;
   width: 85%;
-  max-width: 995px;
-  padding: 1em;
+  max-width: 1000px;
   background: -webkit-gradient(
     radial,
     50% 100%,
@@ -88,13 +88,14 @@ a:hover {
   padding: 0px;
   margin: 0 auto;
   transform: rotate(20deg);
+  display: none;
 }
 .text-bubble:after {
   content: "";
   position: absolute;
   display: block;
   width: 0;
-  z-index: 1;
+  z-index: 0;
   border-style: solid;
   border-color: #623d2e transparent;
   border-width: 21px 8px 0;
@@ -123,6 +124,7 @@ input#cake[type="text"] {
   background: none;
   padding: 10px;
   border: 1px dashed #3a251c;
+  cursor: pointer;
 }
 .click-cake:hover {
   position: relative;
@@ -130,6 +132,7 @@ input#cake[type="text"] {
   top: 1px;
 }
 
+/* EMAIL FORM */
 .email-input {
   background-color: #fff;
   border-radius: 10px;
@@ -137,7 +140,8 @@ input#cake[type="text"] {
   border: none;
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
-  resize: vertical;
+  width: 30%;
+  resize: horizontal;
 }
 .email-submit {
   background-color: #ff8b8e;
@@ -146,7 +150,7 @@ input#cake[type="text"] {
   border: none;
   font-family: "Open Sans", sans-serif;
 }
-/* FANMAIL */
+
 
 /* Flexbox */
 .flex-container {
@@ -168,12 +172,39 @@ input#cake[type="text"] {
   flex-basis: 35%;
 }
 
+/* Gallery Grid */
+.gallery-column {
+  float: left;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #b38979;
+}
+
+.gallery-column:nth-child(odd) {
+  background-color: #ffbfb4;
+}
+
+/* Clear floats after the columns */
+.gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* NAVIGATION - documentation:  https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
 /* Add a black background color to the top navigation */
 .hmenu {
   background-color: #f7f3d9;
   overflow: hidden;
   display: none;
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 2px solid #aacbb0;
 }
 
 /* Style the links inside the navigation bar */
@@ -234,7 +265,8 @@ input#cake[type="text"] {
 @media screen and (max-width: 600px) {
   /* W3 School Hamburger Nav */
   .hmenu.responsive {
-    position: relative;
+    position: fixed;
+    top: 0;
   }
   .hmenu.responsive a.icon {
     position: absolute;
@@ -258,4 +290,35 @@ input#cake[type="text"] {
     clear: left;
     width: 230px;
   }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 600px) {
+  .gallery-column {
+    width: 33.33%;
+    -webkit-border-top-left-radius: 20px;
+-webkit-border-top-right-radius: 20px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-topright: 20px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+text-align: center;}
+
+.text-bubble {
+  position: relative;
+  left: 5%;
+  background: #623d2e;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  line-height: 120px;
+  text-align: center;
+  width: 250px;
+  height: 120px;
+  border-radius: 20px;
+  padding: 0px;
+  margin: 0 auto;
+  transform: rotate(20deg);
+  display: block;
+}
 }
