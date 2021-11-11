@@ -3,15 +3,75 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Merengue</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Shortcake: An Animal Crossing Fansite</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel='stylesheet' type='text/css' media='screen' href='stylesheet.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <script src='script.js'></script>
 </head>
 <body>
-<section>
-    <button onclick="buttonClick();">🍰</button>
-    <input type="text" id="cake" value="0"></input>
-</section>
+<nav class="hmenu" id="menu">
+    <a href="#home" class="active">Home</a>
+    <a href="#">About</a>
+    <a href="#">Meet Merengue</a>
+    <a href="#">Café</a>
+    <a href="#">Fanmail</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <span class="fa fa-bars"></span>
+    </a>
+</nav>
+<header>
+    <div class="text-bubble">hi, biscuit!</div>
+    <a href=""><img src="/images/Merengue_NH_official.png" style="width: 200px;"></a>
+        <h1>Shortcake</h1>
+        <h2>A fansite dedicated to Merengue from Animal Crossing</h2>
+</header>
+<div class="scallop"></div>
+<div class="container">
+<div class="flex-container">
+    <div class="item main">
+        <section class="about">
+            <h3>About Shortcake</h3>
+            <p>Shortcake is a capsule fansite celebrating our favorite digital dessert rhinoceros: Merengue of Animal Crossing! This project was created for the September 2021 Code Louisville Front End Web Development Course by <a href="#">Xavier Watson.</a></p>
+        </section>
+
+        <section class="meet">
+            <h3>Meet Merengue</h3>
+            <p>Merengue is a rhino villager that appears in the Nintendo game series Animal Crossing. She is named for the sweet confection known as meringue, which is egg whites and sugar whipped to soft peaks. True to her name, Merengue resembles a strawberry shortcake, with a strawberry and whipped cream horn, a strawberry tail, creamy white points, and a pink body. Her default outfit is the Chef's Outfit.</p>
+        </section>
+
+        <section class="fanmail">
+            <h3>Send Fanmail</h3>
+            <textarea id="myText">Hi, Shortcake!...</textarea>
+            
+            <button onclick="sendMail(); return false">Send Fanmail</button>
+            </section>
+    </div>
+    <div class="item">
+        <section class="details">
+            <h3>A Closer Look</h3>
+            <img src="/images/Merengue_NH_official.png" class="c2-img">
+            <p>Personality: Normal</p>
+            <p>Species: Rhino</p>
+            <p>Birthday: March 19</p>
+            <p>Skill: Doodling</p>
+            <p>Goal: Pastry Chef</p>
+            <p>Favorite Song: K.K. Ballad
+            </p>
+            </section>
+    </div>
+    <div class="item">
+        <section class="cafe">
+        <h3>Café Merengue</h3>
+        <h4>Cake Break</h4>
+            <p><button onclick="buttonClick();" class="click-cake"><span style="font-size: 8em;">🍰</span></button></p>
+            <p>Merengue has served you <input type="text" id="cake" value="0"></input> slices of cake this visit.</p>
+        </section>
+    </div>
+  </div>
+</div>
 </body>
 </html>
