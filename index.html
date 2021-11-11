@@ -35,25 +35,18 @@
     <div class="item main">
         <section class="about">
             <h3>About Shortcake</h3>
-            <p>Shortcake is a capsule fansite celebrating our favorite digital dessert rhinoceros: Merengue of Animal Crossing! This project was created for the September 2021 Code Louisville Front End Web Development Course by <a href="#">Xavier Watson.</a></p>
+            <article>Shortcake is a capsule fansite celebrating our favorite digital dessert rhinoceros: Merengue of Animal Crossing! This project was created for the September 2021 Code Louisville Front End Web Development Course by <a href="#">Xavier Watson.</a></article>
         </section>
 
         <section class="meet">
             <h3>Meet Merengue</h3>
-            <p>Merengue is a rhino villager that appears in the Nintendo game series Animal Crossing. She is named for the sweet confection known as meringue, which is egg whites and sugar whipped to soft peaks. True to her name, Merengue resembles a strawberry shortcake, with a strawberry and whipped cream horn, a strawberry tail, creamy white points, and a pink body. Her default outfit is the Chef's Outfit.</p>
+            <article>Merengue is a rhino villager that appears in the Nintendo game series Animal Crossing. She is named for the sweet confection meringue, which is whipped egg whites and sugar. True to her name, Merengue resembles a strawberry shortcake, with strawberry and whipped cream horns, white points, a strawberry tail, and a pink body. Her default outfit is the Chef's Outfit.</article>
         </section>
-
-        <section class="fanmail">
-            <h3>Send Fanmail</h3>
-            <textarea id="myText">Hi, Shortcake!...</textarea>
-            
-            <button onclick="sendMail(); return false">Send Fanmail</button>
-            </section>
     </div>
     <div class="item">
         <section class="details">
             <h3>A Closer Look</h3>
-            <img src="/images/Merengue_NH_official.png" class="c2-img">
+            <img src="/images/m_by_xw2020.png" class="c2-img">
             <p>Personality: Normal</p>
             <p>Species: Rhino</p>
             <p>Birthday: March 19</p>
@@ -64,15 +57,21 @@
             </section>
     </div>
     <div class="item">
-        <section class="cafe">
         <h3>Café Merengue</h3>
-        <h4>Cake Break</h4>
+        <section class="cafe">
+        <h4>Click for Cake Break</h4>
             <p><button onclick="buttonClick();" class="click-cake"><span style="font-size: 8em;">🍰</span></button></p>
             <p>Merengue has served you <input type="text" id="cake" value="0"></input> slices of cake this visit.</p>
         </section>
+        <h3>Send Fanmail</h3>
+        <section class="cafe">
+            <textarea id="myText" class="email-input">Hi, Merengue! You're my favorite!</textarea>
+            
+            <button onclick="sendMail(); return false" class="email-submit">Send Letter</button>
+            </section>
     </div>
   </div>
-  
+
   <footer>test</footer>
 </div>
 </body>

@@ -120,7 +120,31 @@ input#cake[type="text"] {
 }
 
 .click-cake {
-  background-color: black;
+  background: none;
+  padding: 10px;
+  border: 1px dashed #3a251c;
+}
+.click-cake:hover {
+  position: relative;
+  left: 1px;
+  top: 1px;
+}
+
+.email-input {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  resize: vertical;
+}
+.email-submit {
+  background-color: #ff8b8e;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
 }
 /* FANMAIL */
 
@@ -232,5 +256,6 @@ input#cake[type="text"] {
   .c2-img {
     float: right;
     clear: left;
+    width: 230px;
   }
 }
