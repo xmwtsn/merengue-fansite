@@ -205,7 +205,7 @@ input#cake[type="text"] {
 
 figcaption {
   text-align: center;
-  font-size: .9em;
+  height: 20px;
 }
 
 /* HAMBURGER NAVIGATION - documentation:  https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
@@ -305,6 +305,9 @@ figcaption {
   }
   footer {
     padding-bottom: 0;
+  }
+  figcaption {
+    font-size: .9em;
   }
   .scallop {
     height: 50px;
