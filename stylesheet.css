@@ -8,12 +8,13 @@ body {
 header {
   display: block;
   text-align: center;
-  margin-top: 2em;
+  margin-top: 5em;
 }
 
 footer {
   padding: 1em;
   text-align: center;
+  font-size: .7em;
 }
 
 .join-email {
@@ -176,6 +177,10 @@ input#cake[type="text"] {
 
 .item + .item {
   margin-left: 2%;
+}
+
+.gallery > h3 {
+  padding-left: 1em;
 }
 
 /* Gallery Grid */
