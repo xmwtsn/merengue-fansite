@@ -8,15 +8,15 @@ button.addEventListener("click", function () {
   const email = emailField.value; 
   const name = inputname.value;
   
-  /*if/else statement returns string based on REGEX validation*/
+  /* if/else statement returns string based on REGEX validation, modifies HTML with string */
   if (validateEmail(email)) {
     response.innerHTML = "Hi " + name + ", this email looks great! Thanks, Shortcake! 🍰";
   } else {
-    response.innerHTML = name + ", are you sure that's a valid email address? 👀 Let's try again!";
+    response.innerHTML = name + ", are you sure that's a valid email address? Let's try again!";
   }
 });
 
-/*Checks email input against simple a REGEX pattern: See: https://stackoverflow.com/questions/50330109/simple-regex-pattern-for-email for documentation. */
+/* Checks email input against simple a REGEX pattern: Documentatin: https://stackoverflow.com/questions/50330109/simple-regex-pattern-for-email */
 
 function validateEmail(email) {
   const re = /^[^@]+@[^@]+\.[^@]+$/;
