@@ -14,7 +14,7 @@ header {
 footer {
   padding: 1em;
   text-align: center;
-  font-size: .7em;
+  font-size: 0.7em;
 }
 
 .join-email {
@@ -108,7 +108,7 @@ input#cake[type="text"] {
 }
 
 /* Style button */
-.click {
+.click-result {
   margin-top: 5px;
   margin-bottom: 10px;
 }
@@ -175,12 +175,12 @@ input#cake[type="text"] {
   flex-basis: 20%;
 }
 
-.item + .item {
-  margin-left: 2%;
-}
-
 .gallery > h3 {
   padding-left: 1em;
+}
+
+.join-email > h3 {
+  color: #ffbfb4;
 }
 
 /* Gallery Grid */
@@ -201,6 +201,11 @@ input#cake[type="text"] {
   content: "";
   display: table;
   clear: both;
+}
+
+figcaption {
+  text-align: center;
+  font-size: .9em;
 }
 
 /* HAMBURGER NAVIGATION - documentation:  https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
@@ -260,7 +265,7 @@ input#cake[type="text"] {
 }
 
 @media screen and (max-width: 360px) {
-  /* Tiny Device fix */
+  /* Tiny Device fixes */
   h1 {
     font-size: 2.5em;
   }
@@ -297,6 +302,9 @@ input#cake[type="text"] {
     margin: 0 auto;
     padding: 1em;
     box-sizing: border-box;
+  }
+  footer {
+    padding-bottom: 0;
   }
   .scallop {
     height: 50px;

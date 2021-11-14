@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 <nav class="hmenu" id="menu">
     <a href="/index.html" class="active">Home</a>
@@ -33,19 +34,29 @@
 </header>
 
 <div class="scallop"></div>
+
 <div class="container">
-<div class="flex-container">
+<div class="flex-container"> 
     <div class="item">
         <section id="about">
             <h3>About Club Shortcake</h3>
-            <article>Club Shortcake is a capsule fansite celebrating our favorite digital dessert rhinoceros: Merengue of Animal Crossing! This project was created for the September 2021 Code Louisville Front End Web Development Course by <a href="#">Xavier Watson.</a></article>
+            <p>
+                Club Shortcake is a capsule fansite celebrating our favorite digital dessert rhinoceros: Merengue of Animal Crossing!
+            </p>
+            <p>
+                This project was created for the September 2021 Code Louisville Front End Web Development Course by <a href="#">Xavier Watson.</a>
+            </p>
         </section>
-        </div>
+    </div>
 
     <div class="item">
         <section id="meet">
             <h3>Meet Merengue</h3>
-            <article>Merengue is a rhino villager that appears in the Nintendo game series Animal Crossing. She is named for the sweet confection meringue, which is whipped egg whites and sugar. True to her name, Merengue resembles a strawberry shortcake. She has horns made of strawberry and meringue, white points, a strawberry tail, and a pink body.</article>
+            <p>
+                Merengue is a rhino villager that appears in the Nintendo game series Animal Crossing. She is named for the sweet confection meringue, which is whipped egg whites and sugar. True to her name, Merengue resembles a strawberry shortcake. She has horns made of strawberry and meringue, white points, a strawberry tail, and a pink body.
+            </p>
+            <p>
+            </p>
         </section>
     </div>
     
@@ -91,9 +102,9 @@
     <div class="item">
         <h3>Café Merengue</h3>
         <section class="cafe">
-        <h4>Click for Cake Break</h4>
-            <p><button onclick="buttonClick();" class="click-cake"><span style="font-size: 8em;">🍰</span></button></p>
-            <p>Merengue has served you <div class="click"><input type="text" id="cake" value="0"></input></div> slices of cake this visit.</p>
+        <h4>Click for a Cake Break</h4>
+            <p><button onclick="buttonClick();" class="click-cake" aria-label="Press button to 'take' a slice of cake (add number to counter below)"><span style="font-size: 8em;">🍰</span></button></p>
+            <p>Merengue has served you <div class="click-result"><input type="text" id="cake" value="0"></input></div> slices of cake this visit.</p>
         </section>
     </div>
 </div>
@@ -104,22 +115,22 @@
         <div class="gallery-column">
           <h4>Spotlight</h4>
           <figure>
-              <img src="https://64.media.tumblr.com/40276bc5adc5f2075a0d00f0058fe374/tumblr_q8rcv7sDhm1u1rjwjo1_1280.jpg" alt="" style="width: 100%;">
-              <figcaption>caption</figcaption>
+              <img src="/images/spotlight.JPG" alt="Merengue and character celebrate in tent with happy expressions" style="width: 100%;">
+              <figcaption>#twinning</figcaption>
         </figure>
         </div>
         <div class="gallery-column">
           <h4>Home Exterior</h4>
           <figure>
-            <img src="https://64.media.tumblr.com/40276bc5adc5f2075a0d00f0058fe374/tumblr_q8rcv7sDhm1u1rjwjo1_1280.jpg" alt="" style="width: 100%;">
-            <figcaption>caption</figcaption>
+            <img src="/images/exterior.JPG" alt="A beige house with a red roof and tan door surrounded by greenery" style="width: 100%;">
+            <figcaption>Merengue's Home</figcaption>
       </figure>
         </div>
         <div class="gallery-column">
           <h4>Home Interior</h4>
           <figure>
-            <img src="https://64.media.tumblr.com/40276bc5adc5f2075a0d00f0058fe374/tumblr_q8rcv7sDhm1u1rjwjo1_1280.jpg" alt="" style="width: 100%;">
-            <figcaption>caption</figcaption>
+            <img src="/images/interior.JPG" alt="A bright interior with polka dot walls and floor and pink kitchen themed items" style="width: 100%;">
+            <figcaption>Polka Dot Galore</figcaption>
       </figure>
         </div>
       </div>
@@ -140,6 +151,7 @@
 </footer>
 </div>
 </body>
+
 <script src='js/calculate.js'></script>
 <script src='js/validate.js'></script>
 <script src='js/hamburger.js'></script>
