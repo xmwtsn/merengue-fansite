@@ -12,6 +12,11 @@ header {
 }
 
 footer {
+  padding: 1em;
+  text-align: center;
+}
+
+.join-email {
   padding: 2em;
   background-color: #3a251c;
   color: white;
