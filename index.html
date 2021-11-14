@@ -16,60 +16,92 @@
 </head>
 <body>
 <nav class="hmenu" id="menu">
-    <a href="#home" class="active">Home</a>
-    <a href="#">About</a>
-    <a href="#">Meet Merengue</a>
-    <a href="#">Café Merengue</a>
-    <a href="#">Gallery</a>
-    <a href="#">Connect</a>
+    <a href="/index.html" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#meet">Meet Merengue</a>
+    <a href="#details">A Closer Look</a>
+    <a href="#cafe">Café Merengue</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#footer">Connect</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <span class="fa fa-bars"></span>
     </a>
 </nav>
+
 <header>
     <div class="text-bubble">hi, biscuit!</div>
     <a href=""><img src="/images/Merengue_NH_official.png" style="width: 200px;"></a>
         <h1>Club Shortcake</h1>
         <h2>A fansite dedicated to Merengue from Animal Crossing</h2>
 </header>
+
 <div class="scallop"></div>
 <div class="container">
 <div class="flex-container">
-    <div class="item main">
-        <section class="about">
+    <div class="item">
+        <section id="about">
             <h3>About Club Shortcake</h3>
             <article>Club Shortcake is a capsule fansite celebrating our favorite digital dessert rhinoceros: Merengue of Animal Crossing! This project was created for the September 2021 Code Louisville Front End Web Development Course by <a href="#">Xavier Watson.</a></article>
         </section>
+        </div>
 
-        <section class="meet">
+    <div class="item">
+        <section id="meet">
             <h3>Meet Merengue</h3>
             <article>Merengue is a rhino villager that appears in the Nintendo game series Animal Crossing. She is named for the sweet confection meringue, which is whipped egg whites and sugar. True to her name, Merengue resembles a strawberry shortcake. She has horns made of strawberry and meringue, white points, a strawberry tail, and a pink body.</article>
         </section>
     </div>
+    
     <div class="item">
-        <section class="details">
+        <section id="details">
             <h3>A Closer Look</h3>
-            <img src="/images/m_by_xw2020.png" class="c2-img">
-            <p>Personality: Normal</p>
-            <p>Species: Rhino</p>
-            <p>Birthday: March 19</p>
-            <p>Skill: Doodling</p>
-            <p>Goal: Pastry Chef</p>
-            <p>Favorite Song: K.K. Ballad</p>
-            <p>Default Clothing: Chef's Outfit</p>
+            <img src="/images/m_by_xw2020.png" class="details-img">
+            <table class="details-table" cellpadding="2">
+                <tbody>
+                <tr>
+                <td class="table-left">Personality:</td>
+                <td class="table-right">Normal</td>
+                </tr>
+                <tr>
+                <td class="table-left">Species:</td>
+                <td class="table-right">Rhino</td>
+                </tr>
+                <tr>
+                <td class="table-left">Birthday:</td>
+                <td class="table-right">March 19</td>
+                </tr>
+                <tr>
+                <td class="table-left">Skill:</td>
+                <td class="table-right">Doodling</td>
+                </tr>
+                <tr>
+                <td class="table-left">Goal:</td>
+                <td class="table-right">Pastry Chef</td>
+                </tr>
+                <tr>
+                <td class="table-left">Favorite Song:</td>
+                <td class="table-right">K.K. Ballad</td>
+                </tr>
+                <tr>
+                <td class="table-left">Default Clothing:</td>
+                <td class="table-right">Chef's Outfit</td>
+                </tr>
+                </tbody>
+                </table>
             </section>
     </div>
+    
     <div class="item">
         <h3>Café Merengue</h3>
         <section class="cafe">
         <h4>Click for Cake Break</h4>
             <p><button onclick="buttonClick();" class="click-cake"><span style="font-size: 8em;">🍰</span></button></p>
-            <p>Merengue has served you <input type="text" id="cake" value="0"></input> slices of cake this visit.</p>
+            <p>Merengue has served you <div class="click"><input type="text" id="cake" value="0"></input></div> slices of cake this visit.</p>
         </section>
     </div>
 </div>
 
-  <section>
+<section id="gallery">
 <h3>Gallery</h3>
     <div class="gallery">
         <div class="gallery-column">
@@ -94,12 +126,14 @@
       </figure>
         </div>
       </div>
-  </section>
+</section>
 
 <footer>
+    <section id="footer">
     <input name="email" placeholder="queenofsweets@merengue.com" class="email-input"/></input>
     <button id="button" class="email-submit">Become a shortcake!</button>
     <p id="message"></p>
+</section>
 </footer>
 </div>
 </body>
