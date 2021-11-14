@@ -8,7 +8,7 @@ body {
 header {
   display: block;
   text-align: center;
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 footer {
@@ -88,38 +88,6 @@ a:hover {
   );
   -webkit-background-size: 49px 100%;
   margin: 0 auto;
-}
-
-/* Text Bubble */
-.text-bubble {
-  position: relative;
-  left: 5%;
-  background: #623d2e;
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 40px;
-  line-height: 120px;
-  text-align: center;
-  width: 250px;
-  height: 120px;
-  border-radius: 20px;
-  padding: 0px;
-  margin: 0 auto;
-  transform: rotate(20deg);
-  display: none;
-}
-.text-bubble:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 0;
-  z-index: 0;
-  border-style: solid;
-  border-color: #623d2e transparent;
-  border-width: 21px 8px 0;
-  bottom: -21px;
-  left: 72%;
-  margin-left: -8px;
 }
 
 /* CAKE CLICK GAME */
@@ -396,23 +364,5 @@ input#cake[type="text"] {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     text-align: center;
-  }
-
-  .text-bubble {
-    position: relative;
-    left: 5%;
-    background: #623d2e;
-    color: #ffffff;
-    font-family: "Open Sans", sans-serif;
-    font-size: 40px;
-    line-height: 120px;
-    text-align: center;
-    width: 250px;
-    height: 120px;
-    border-radius: 20px;
-    padding: 0px;
-    margin: 0 auto;
-    transform: rotate(20deg);
-    display: block;
   }
 }
