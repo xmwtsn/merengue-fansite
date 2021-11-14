@@ -138,7 +138,6 @@ input#cake[type="text"] {
   margin-top: 5px;
   margin-bottom: 10px;
 }
-
 .click-cake {
   height: 175px;
   width: 175px;
@@ -165,12 +164,28 @@ input#cake[type="text"] {
   width: 30%;
   resize: horizontal;
 }
+.name-input {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  width: 15%;
+  resize: horizontal;
+}
 .email-submit {
   background-color: #ff8b8e;
   border-radius: 10px;
   padding: 10px;
   border: none;
   font-family: "Open Sans", sans-serif;
+}
+.email-response {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /* Flexbox */
@@ -292,33 +307,29 @@ input#cake[type="text"] {
 }
 
 @media screen and (min-width: 768px) {
-  /* rules here apply to devices from from 768px to 991px (inclusive) TABLET */
+  /* TABLET */
   .flex-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
-
   .container {
     width: 85%;
-    max-width: 1000px;
+    max-width: 980px;
     margin: 0 auto;
     padding: 1em;
     box-sizing: border-box;
   }
-
   .scallop {
     height: 50px;
     width: 85%;
-    max-width: 1000px;
+    max-width: 980px;
   }
-
   .details-img {
     float: none;
     width: 200px;
     height: 200px;
   }
-
   .gallery-column {
     width: 33.33%;
     -webkit-border-top-left-radius: 20px;
@@ -329,7 +340,6 @@ input#cake[type="text"] {
     border-top-right-radius: 20px;
     text-align: center;
   }
-
   .cafe {
     background: repeating-linear-gradient(
       45deg,
@@ -343,10 +353,13 @@ input#cake[type="text"] {
     border-radius: 20px;
     box-sizing: border-box;
   }
+  .click-cake {
+    background-color: #f7f3d9;
+  }
 }
 
 @media (min-width: 992px) {
-  /* rules here apply to devices from 992px+ [DESKTOP] */
+  /* DESKTOP */
   .flex-container {
     display: flex;
     flex-wrap: nowrap;
@@ -357,18 +370,10 @@ input#cake[type="text"] {
     display: none;
   }
 
-  .container {
-    width: 85%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 1em;
-    box-sizing: border-box;
-  }
-
   .scallop {
     height: 50px;
     width: 85%;
-    max-width: 1000px;
+    max-width: 980px;
   }
 
   .cafe {
