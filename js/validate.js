@@ -18,7 +18,7 @@ button.addEventListener("click", function () {
 });
 
 // Checks email input against simple a REGEX pattern.
-// Documentation: https://stackoverflow.com/questions/50330109/simple-regex-pattern-for-email */
+// Documentation: https://stackoverflow.com/questions/50330109/simple-regex-pattern-for-email
 function validateEmail(email) {
   const re = /^[^@]+@[^@]+\.[^@]+$/;
   return re.test(String(email).toLowerCase());
