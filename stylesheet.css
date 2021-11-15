@@ -107,8 +107,8 @@ a:hover {
 /* Style output */
 input#cake[type="text"] {
   padding: 0.5em;
-  background-color: #ff8b8e;
-  border: 2px solid #ff8b8e;
+  background-color: #b38979;
+  border: 2px solid #ffffff;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   width: 40px;
@@ -260,11 +260,11 @@ figcaption {
 }
 .hmenu a:hover {
   background-color: #ff8b8e;
-  color: #9e132f;
+  color: #3a251c;
 }
 .hmenu a.active {
   background-color: #ff8b8e;
-  color: #9e132f;
+  color: #3a251c;
 }
 .hmenu .icon {
   display: none;
