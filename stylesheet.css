@@ -128,6 +128,9 @@ input#cake[type="text"] {
   left: 1px;
   top: 1px;
 }
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
 
 /* EMAIL FORM */
 .email-input {
