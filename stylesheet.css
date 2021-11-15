@@ -175,6 +175,10 @@ input#cake[type="text"] {
   flex-basis: 20%;
 }
 
+.item:nth-child(even) {
+  background-color: #fdfae3;
+}
+
 .gallery > h3 {
   padding-left: 1em;
 }
@@ -296,6 +300,9 @@ figcaption {
     flex-wrap: wrap;
     flex-direction: row;
   }
+  .item:nth-child(even) {
+    background: none;
+  }
   .container {
     width: 85%;
     max-width: 980px;
@@ -307,7 +314,7 @@ figcaption {
     padding-bottom: 0;
   }
   figcaption {
-    font-size: .9em;
+    font-size: 0.9em;
   }
   .scallop {
     height: 50px;
