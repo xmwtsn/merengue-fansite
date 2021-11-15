@@ -174,6 +174,10 @@ input#cake[type="text"] {
   text-align: center;
 }
 
+input:focus, textarea:focus {
+  outline-color: #ffffff;
+}
+
 /* Flexbox */
 .flex-container {
   display: flex;
@@ -377,6 +381,7 @@ figcaption {
     display: inline-flex;
     margin-bottom: 0;
   }
+
 }
 
 @media (min-width: 992px) {
