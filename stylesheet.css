@@ -129,6 +129,7 @@ input#cake[type="text"] {
   top: 1px;
 }
 .disable-dbl-tap-zoom {
+  /* see doc: https://stackoverflow.com/questions/10614481/disable-double-tap-zoom-option-in-browser-on-touch-devices/53236027 */
   touch-action: manipulation;
 }
 
@@ -140,8 +141,11 @@ input#cake[type="text"] {
   border: none;
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
-  width: 30%;
+  width: 50%;
   resize: horizontal;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 .name-input {
   background-color: #fff;
@@ -150,8 +154,11 @@ input#cake[type="text"] {
   border: none;
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
-  width: 15%;
+  width: 50%;
   resize: horizontal;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 .email-submit {
   background-color: #ff8b8e;
@@ -356,6 +363,19 @@ figcaption {
   }
   .click-cake {
     background-color: #f7f3d9;
+  }
+  .email-input {
+    width: 30%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .name-input {
+    width: 20%;
+    resize: horizontal;
+    display: inline-flex;
+    margin-bottom: 0;
   }
 }
 
