@@ -66,12 +66,12 @@ a:hover {
 
 /* Accessibility Feature */
 .sr-only {
-  position:absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .details-table {
@@ -184,7 +184,8 @@ input#cake[type="text"] {
   text-align: center;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline-color: #ffffff;
 }
 
@@ -391,7 +392,6 @@ figcaption {
     display: inline-flex;
     margin-bottom: 0;
   }
-
 }
 
 @media (min-width: 992px) {
@@ -400,10 +400,6 @@ figcaption {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-  }
-
-  .hmenu {
-    display: none;
   }
 
   .scallop {
@@ -427,5 +423,19 @@ figcaption {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     text-align: center;
+  }
+
+  /* Menu display inline on desktop */
+  .hmenu a {
+    display: inline;
+  }
+  .hmenu .icon {
+    display: none;
+  }
+  .hmenu a:not(:first-child) {
+    display: inline;
+  }
+  .hmenu a.icon {
+    display: none;
   }
 }
